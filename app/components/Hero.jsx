@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const features = [
   {
@@ -41,18 +42,18 @@ export default function Hero() {
               para tu comercio.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a
+              <Link
                 href="/servicios"
                 className="inline-flex justify-center items-center rounded-lg bg-blue-500 px-8 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all active:scale-[0.98]"
               >
                 Ver Todos los Servicios
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/contact"
                 className="inline-flex justify-center items-center rounded-lg bg-white border border-slate-300 px-8 py-3.5 text-base font-semibold text-slate-700 shadow-sm hover:bg-slate-50 transition-all active:scale-[0.98]"
               >
                 Contáctanos ya!
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -64,11 +65,12 @@ export default function Hero() {
                   key={idx} 
                   className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col items-center sm:items-start text-center sm:text-left hover:shadow-md transition-shadow"
                 >
-                  <div className="h-14 w-14 bg-blue-50 rounded-xl flex flex-shrink-0 items-center justify-center mb-4 p-2.5">
-                    <img
+                  <div className="h-14 w-14 bg-blue-50 rounded-xl flex flex-shrink-0 items-center justify-center mb-4 p-2.5 relative">
+                    <Image
                       src={feature.icon}
                       alt={feature.title}
-                      className="w-full h-full object-contain"
+                      fill
+                      className="object-contain p-2.5"
                     />
                   </div>
                   <h3 className="text-lg font-bold text-slate-900 mb-2">{feature.title}</h3>

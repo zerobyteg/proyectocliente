@@ -1,6 +1,7 @@
 'use client';
 
 import { ArrowUp } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -18,12 +19,12 @@ export default function Footer() {
             <ul className="space-y-2">
               {[['Inicio', ''], ['Servicios', 'servicios'], ['Productos', 'products'], ['Contacto', 'contact']].map(([label, path]) => (
                 <li key={label}>
-                  <a
+                  <Link
                     href={`/${path}`}
                     className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
                   >
                     {label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
