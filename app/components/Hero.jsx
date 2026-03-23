@@ -1,25 +1,30 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import mobileIcon from '../../public/assets/mobile-vector.svg';
+import internetIcon from '../../public/assets/internet-tv-vector.svg';
+import securityIcon from '../../public/assets/security-vector.svg';
+import posIcon from '../../public/assets/pos-vector.svg';
+
 const features = [
   {
     title: 'Telefonía Móvil',
-    icon: '/assets/mobile-vector.svg',
+    icon: mobileIcon,
     description: 'Planes flexibles y cobertura total para mantenerte conectado.',
   },
   {
     title: 'Internet Hogar',
-    icon: '/assets/internet-tv-vector.svg',
+    icon: internetIcon,
     description: 'Súper alta velocidad y TV en un solo combo increíble.',
   },
   {
     title: 'Alarmas',
-    icon: '/assets/security-vector.svg',
+    icon: securityIcon,
     description: 'Sistemas inteligentes para proteger lo que más te importa.',
   },
   {
     title: 'POS Comercial',
-    icon: '/assets/pos-vector.svg',
+    icon: posIcon,
     description: 'Terminales ágiles y seguras para impulsar tus ventas.',
   },
 ];
