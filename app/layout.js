@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600', '700'] }
 
 export const metadata = {
   title: 'MyBrand',
-  description: 'Una plantilla limpia de Next.js con App Router, Tailwind CSS y Lucide React.',
+  description: 'Servicios de conectividad y seguridad para tu hogar o negocio. Telefonía móvil, internet, alarmas y POS comercial.',
 };
 
 export default function RootLayout({ children }) {
